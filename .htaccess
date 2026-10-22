@@ -1,0 +1,12 @@
+# Apache 2.4 hardening (WAMP/XAMPP/most shared hosts)
+Options -Indexes
+
+# Never serve config, SQL dumps, docs or dotfiles
+<FilesMatch "(^\.|\.(env|sql|md|example|log|ini|bak|zip)$)">
+    Require all denied
+</FilesMatch>
+
+# Don't advertise PHP
+<IfModule mod_headers.c>
+    Header always unset X-Powered-By
+</IfModule>

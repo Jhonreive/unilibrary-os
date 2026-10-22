@@ -1,0 +1,13 @@
+{
+  "name": "ulibrary",
+  "private": true,
+  "version": "1.0.0",
+  "description": "UniLibrary OS - Tailwind CSS build",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./assets/app.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/app.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

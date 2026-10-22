@@ -1,0 +1,20 @@
+# secrets & local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# editor / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# logs & temp
+*.log
+error_log
+/tmp/
+
+# Tailwind build tooling
+node_modules/
